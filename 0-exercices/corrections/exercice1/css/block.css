@@ -1,0 +1,19 @@
+* {
+  /* Tenir compte des margin, padding et border dans la taille (largeur et hauteur) de tous les éléments HTML */
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 20px;
+}
+
+div {
+  display: inline-block;
+  background-color: #2d2d2d;
+  text-align: center;
+  height: 150px;
+  line-height: 150px;
+  color: #fff;
+  margin: .25rem .1rem 3rem .1rem;
+  width : calc(25% - 7px);
+}
