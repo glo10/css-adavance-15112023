@@ -1,12 +1,25 @@
-# Ressources
+# Ressources graphiques
 
 - [Icônes](https://icones.js.org/)
 - [Polices](https://fonts.google.com/)
-- [Images](https://unsplash.com/)
+- [Faux texte avec du Lorem Ipsum](https://fr.lipsum.com/)
+- [Images libres de droit avec unplash](https://unsplash.com/)
+- [Images libres de droit avec pixabay](https://pixabay.com/fr/)
 - [Extraire les couleurs à partir d'une image](https://color.adobe.com/fr/create/image)
-- [Couleurs](https://color.adobe.com/fr/create/color-wheel)
-- [Logo](https://www.freelogodesign.org/)
+- [Palette de couleur d'Abobe](https://color.adobe.com/fr/create/color-wheel)
+- [Palette de couleur de Canva](https://www.canva.com/colors/color-palettes/)
+- [Création de logo gratuite avec freelogodesign](https://www.freelogodesign.org/)
 - [Générateur favicon](https://favicon.io/favicon-converter/)
+- [Création de logo payant avec logoai](https://www.logoai.com/make)
+- [Création de logo payant avec looka](https://looka.com/)
+- [Transformer une image en image vectorisée](https://vectorizer.ai/)
+- [Vidéo de couverture](https://coverr.co/)
+
+---
+
+## Jeux et simulateurs
+
+- [CSS tester](https://www.w3schools.com/cssref/trysel.php)
 
 ---
 
@@ -24,3 +37,10 @@
 - [Can I Use](https://caniuse.com/)
 - [Validation code HTML](https://validator.w3.org/)
 - [Validation code CSS](https://jigsaw.w3.org/css-validator/)
+
+---
+
+## Compléments
+
+- [Différence flex-basis, shrink et grow](https://codepen.io/raphaelgoetter/pen/bdYQML)
+- [Réinitialiser les propriétés par défaut des navigateurs (normalize.css)](https://github.com/necolas/normalize.css/blob/master/normalize.css)
