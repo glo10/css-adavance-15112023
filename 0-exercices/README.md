@@ -42,5 +42,11 @@
 
 ## Compléments
 
+### FlexBox
+
 - [Différence flex-basis, shrink et grow](https://codepen.io/raphaelgoetter/pen/bdYQML)
+- [FlexBox testeur pour grow, basis et shrink](https://www.madebymike.com.au/demos/flexbox-tester/)
+
+### Autres
+
 - [Réinitialiser les propriétés par défaut des navigateurs (normalize.css)](https://github.com/necolas/normalize.css/blob/master/normalize.css)
