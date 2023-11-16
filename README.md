@@ -11,8 +11,10 @@ Installez un éditeur de code de votre choix. Dans le cas échéant, télécharg
 ## Les extensions de Visual Studio Code
 
 - [HTML CSS Support](https://marketplace.visualstudio.com/items?itemName=ecmel.vscode-html-css)
+
 ![htmlCss](./img/html_css.png)
 - [Live server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer)
+
 ![htmlCss](./img/live_server.PNG)
 
 ---
