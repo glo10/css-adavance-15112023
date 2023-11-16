@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Challenge</title>
+    <style>
+      h1,
+      h2 {
+        text-align: center;
+      }
+
+      .container {
+        display: grid;
+        grid-template-columns: repeat(9, 1fr);
+        grid-template-rows: repeat(5, 100px);
+      }
+
+      .container div {
+        border-top: none;
+        text-align: center;
+        line-height: 100px;
+        height: 100px;
+        box-shadow: 2px 2px 2px #141414;
+        text-transform: capitalize;
+      }
+
+      .container div:nth-of-type(4) {
+        grid-area: 5 / 2 / 6 / 9;
+        background-color: #db4414;
+      }
+
+      .container div:nth-of-type(3) {
+        grid-area: 4 / 3 / 5 / 8;
+        background-color: #7840db;
+      }
+
+      .container div:nth-of-type(2) {
+        grid-area: 3 / 4 / 4 / 7;
+        background-color: #dbd21f;
+      }
+
+      .container div:first-of-type {
+        grid-area: 2 / 5 / 3 / 6;
+        background-color: #14dba9;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <h1>Réaliser le layout ci-dessous</h1>
+      <section>
+        <h2>Knockout</h2>
+        <div class="container">
+          <div>finale</div>
+          <div>demi</div>
+          <div>quart</div>
+          <div>huitième</div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
