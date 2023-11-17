@@ -1,0 +1,26 @@
+* {
+  box-sizing: border-box;
+}
+
+main {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #d3d3d3;
+}
+
+header {
+  flex-basis: 100%;
+  background-color: #fff;
+}
+
+div {
+  margin: 3px 2px 50px 2px;
+  color: #fff;
+  font-size: 2rem;
+  background-color: #2d2d2d;
+  text-align: center;
+  height: 150px;
+  line-height: 150px; 
+  flex-basis: calc(25% - 4px);
+}
+
