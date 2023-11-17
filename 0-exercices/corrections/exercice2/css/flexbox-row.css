@@ -1,0 +1,20 @@
+@import url('./normalize.css');
+@import url('./_partials/variables.css');
+@import url('./_partials/div-items.css');
+
+main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: end;
+}
+
+main div:first-of-type,
+main div:nth-of-type(5) {
+  flex-basis: 100%;
+}
+
+main div:nth-of-type(2),
+main div:nth-of-type(3),
+main div:nth-of-type(4) {
+  flex-basis: 50%;
+}

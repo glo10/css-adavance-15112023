@@ -1,0 +1,46 @@
+
+@import url('./normalize.css');
+@import url('./_partials/variables.css');
+@import url('./_partials/div-items.css');
+
+/* 
+1. Conteneur qui contient des enfants
+2. Appliquer display grid sur le conteneur
+3. Définir la grille(nombre de colonnes et nombre de lignes) de votre conteneur
+Utilisez les propriétés grid-template-columns et grid-template-rows ou grid-template (fait les 2)
+4. Pour chaque enfant, lui donner le positionnement avec la colonne du début et fin
+puis la ligne du début et de la fin
+*/
+main {
+  display: grid;
+  /* grid-template-columns: repeat(2, 1fr) ;
+  grid-template-rows: repeat(9, 80px); */
+  /* Raccourci de grid-template-columns et grid-template-rows */
+  grid-template: repeat(9, 80px) / repeat(2, 1fr);
+}
+
+main div:first-of-type {
+  /* raccourci de grid-column-start et grid-column-end */
+  grid-column: 1 / -1;
+}
+
+main div:nth-of-type(2) {
+  /* raccourci de grid-row-start et grid-row-end */
+  grid-row: 2 / 9;
+}
+
+main div:nth-of-type(3){
+  grid-row: 2 / 5;
+}
+
+main div:nth-of-type(4) {
+  grid-row: 5 / 9;
+}
+
+main div:nth-of-type(5)  {
+  /* Une autre façon pour déterminer la colonne de fin
+  on peut dire qu'il s'étend sur X colonnes
+  On peut appliquer le même raisonnement pour grid-row avec le span 
+  */
+  grid-column: 1 / span 2;
+}

@@ -1,0 +1,49 @@
+@import url('./normalize.css');
+@import url('./_partials/variables.css');
+@import url('./_partials/div-items.css');
+
+main {
+  display: flex;
+  flex-direction: column;
+}
+
+main div:first-of-type,
+main div:nth-of-type(5) {
+  width: 100%;
+}
+
+main div:nth-of-type(2),
+main div:nth-of-type(3),
+main div:nth-of-type(4){
+  width: 50%;
+}
+
+main div:nth-of-type(3),
+main div:nth-of-type(4){
+  align-self: flex-end;
+}
+
+main div:nth-of-type(2) {
+  height: 700px;
+}
+
+
+main div:nth-of-type(3) {
+  height: 250px;
+}
+
+main div:nth-of-type(4) {
+  height: 450px;
+}
+
+/* 
+Pour avoir la mise en page, flexbox ne suffit pas
+il faut compléter avec le positionnement pour combler les espaces
+entre les blocs mais on en a quand même en base
+ */
+main div:nth-of-type(3),
+main div:nth-of-type(4),
+main div:nth-of-type(5){
+  position: relative;
+  bottom: 700px;
+}

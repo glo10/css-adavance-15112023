@@ -4,8 +4,56 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./css/block.css">
+  <link rel="stylesheet" href="./css/normalize.css">
   <title>Maquette 1</title>
+  <style>
+    * {
+  /* Tenir compte des margin, padding et border dans la taille (largeur et hauteur) de tous les éléments HTML */
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 20px;
+}
+
+div {
+  background-color: #2d2d2d;
+  text-align: center;
+  height: 150px;
+  line-height: 150px;
+  color: #fff;
+  margin: .25rem .1rem 3rem .1rem;
+}
+
+main {
+  display: flex;
+  /* Passer à logne, lorsqu'il n'y a plus assez d'espace pour tout le monde (enfants)*/
+  flex-wrap: wrap;
+  /* Pas nécessaire de le spécifier, c'est la valeur par défaut 
+  axe principal = horizontal pour gérer la disposition des enfants dans cet axe on va utiliser justify-content
+  axe secondaire = vertical pour gérer la disposition des enfants dans cet axe align-items
+  */
+  flex-direction: row;
+  justify-content: center;
+}
+
+header {
+  width: 100%;
+}
+
+div {
+  width: calc(25% - 7px);
+}
+
+/*
+Methodologie 
+1. il faut un conteneur (un élément parent qui contient plusieurs éléments enfants)
+2. appliquer display flex sur le conteneur
+3. Déterminer la direction et l'axe principale grâce à la propriété flex-direction
+4. Dire comment les enfants vont se positionner sur cet axe principale
+4. Dire commment ils vont se positionner sur l'axe séconde (optionnel)
+*/
+  </style>
 </head>
 <body>
   <main>

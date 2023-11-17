@@ -1,0 +1,34 @@
+main div {
+  text-align: var(--text-align);;
+  font-size: var(--div-font-size);
+  font-weight: var(--font-weight);
+}
+
+main div:first-of-type {
+  color: var(--color-black);
+  background-color: var(--color-white);
+  line-height: 80px;
+}
+
+main div:nth-of-type(2) {
+  background-color: var(--color-grey);
+  line-height: calc(2*var(--line-height-320));
+}
+
+main div:nth-of-type(5) {
+  line-height: var(--line-height-80);
+}
+
+main div:nth-of-type(3) {
+  line-height: var(--line-height-320);
+}
+
+main div:nth-of-type(4) {
+  background-color: var(--color-grey-dark);
+  line-height: var(--line-height-320);
+}
+
+main div:nth-of-type(3),
+main div:nth-of-type(5) {
+  background-color: var(--color-grey-light);
+}
