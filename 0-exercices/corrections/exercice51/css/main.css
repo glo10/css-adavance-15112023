@@ -1,0 +1,73 @@
+* {
+  box-sizing: border-box;
+}
+
+/*
+Pour les grid ici plusieurs propriétés ne sont pas nécessaires car
+les enfants viennent se positionner naturellement sur les premières cellules disponibles et occupent
+une cellule par defaut
+*/
+main {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(9, 80px);
+  border: 1px solid #ccc;
+}
+
+main div {
+  text-align: center;
+  color: #fff;
+  font-size: 2em;
+  font-weight: 900;
+}
+
+main div:first-of-type {
+  color: #141414;
+  grid-column-start: 1;
+  grid-column-end: -1;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  background-color: white;
+}
+
+main div:nth-of-type(2) {
+  grid-row-start: 2;
+  grid-row-end: 9;
+  background-color: #8c8c8c;
+  line-height: 640px;
+}
+
+main div:nth-of-type(3) {
+  grid-row-start: 2;
+  grid-row-end: 5;
+  background-color: #a6a6a6;
+  line-height: 320px;
+}
+
+main div:nth-of-type(4) {
+  grid-row-start: 5;
+  grid-row-end: 9;
+  background-color: #737373;
+  line-height: 320px;
+}
+
+main div:last-of-type {
+  background-color: #bfbfbf;
+  grid-column-start: 1;
+  grid-column-end: -1;
+  line-height: 80px;
+}
+
+@media screen and (max-width: 768px) {
+  main {
+    display: block;
+  }
+  div:first-of-type {
+    height: 65px;
+    line-height: 65px;
+  }
+  div:nth-of-type(5) {
+    display: none;
+  }
+}
+

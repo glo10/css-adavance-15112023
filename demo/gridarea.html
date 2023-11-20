@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    main {
+      text-align: center;
+      display: grid;
+      grid-template-areas: 
+      "header header"
+      "s1 s2"
+      "s3 s3"
+      "footer footer";
+    }
+
+    header {
+      grid-area:header ;
+      background-color: antiquewhite;
+    }
+
+    
+    #s1 {
+      grid-area:s1 ;
+      background: orange;
+    }
+    
+    
+    #s2 {
+      grid-area:s2 ;
+      background: #d55d5d;
+    }
+    
+    #s3 {
+      grid-area:s3 ;
+      background: #5d6dd5;
+    }
+
+    footer {
+      grid-area:footer ;
+      background: #9fd55d;
+    }
+
+    @media screen and (max-width: 600px) {
+      main {
+        grid-template-areas: 
+        "header"
+        "s1"
+        "s2"
+        "s3"
+        "footer";
+      }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <header>header</header>
+    <section id="s1">section 1</section>
+    <section id="s2">section 2</section>
+    <section id="s3">section 3</section>
+    <footer>footer</footer>
+  </main>
+</body>
+</html>

@@ -1,0 +1,40 @@
+
+@import url('./normalize.css');
+@import url('./_partials/variables.css');
+@import url('./_partials/div-items.css');
+
+main {
+  display: grid;
+  grid-template: repeat(9, 150px) / repeat(2, 1fr);
+}
+
+main div:first-of-type {
+  top: 0;
+  border: .1rem solid #ccc;
+}
+
+main div:first-of-type,
+main div:nth-of-type(5) {
+  position: fixed;
+  left: 0;
+  right: 0;
+}
+
+main div:nth-of-type(2) {
+  grid-row: 1 / -1;
+}
+
+main div:nth-of-type(3){
+  grid-row: 1 / 5;
+}
+
+main div:nth-of-type(4) {
+  grid-row: 5 / -1;
+}
+
+main div:nth-of-type(5)  {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
